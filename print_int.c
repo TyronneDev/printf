@@ -3,8 +3,10 @@
 /**
  * print_int - writes the integer to stdout
  * @num: the int to be printed
+ *
  * if negative, it calls the 'negative' function to handle printing.
  * If the number is positive, it calls the 'positive' function
+ *
  * Return: 1
  */
 
