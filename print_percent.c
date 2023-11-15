@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * print_percent - writes the character % to stdout
- * @c: The character to be printed
- *
- * Return: 1 
- */
+* print_percent - this function writes the character % to stdout
+* @list: unused argument
+*
+* Return: 1
+*/
 
 int print_percent(va_list list __attribute__((unused)))
 {
-	char c = '%';
+char c = '%';
 
-	write(1, &c, 1);
-	return (1);
+write(1, &c, 1);
+return (1);
 }
