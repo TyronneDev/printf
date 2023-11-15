@@ -1,14 +1,11 @@
 #include "main.h"
 
 /**
- * print_int - writes the integer to stdout
- * @num: the int to be printed
- *
- * if negative, it calls the 'negative' function to handle printing.
- * If the number is positive, it calls the 'positive' function
- *
- * Return: 1
- */
+* positive - prints a positive integer to stdout
+* print_int - this function writes the integer to stdout
+* @figure: the positive or negative integer to be printed
+* Return: the number of digits in the integer
+*/
 
 int positive(int figure)
 {
@@ -44,7 +41,11 @@ i--;
 
 return (neg_pos);
 }
-
+/**
+*negative - prints a negative integer to stdout
+*@figure: the positive or negative integer to be printed
+*Return: the number of digits in the integer
+*/
 int negative(int figure)
 {
 int neg_pos = 1;
@@ -82,7 +83,11 @@ i--;
 
 return (neg_pos + 1);
 }
-
+/**
+*print_int - this function writes the integer to stdout
+*@list: a va_list containing the integer to be printed
+* Return: the number of digits in the integer
+*/
 int print_int(va_list list)
 {
 int num = va_arg(list, int);
@@ -97,3 +102,4 @@ neg_pos = negative(num);
 
 return (neg_pos);
 }
+
