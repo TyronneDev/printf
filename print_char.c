@@ -1,13 +1,16 @@
 #include "main.h"
+
 /**
- * print_char - prints character to stdout
- * @c: The character to print
- *
- * Return: 1 
- */
-int print_char (va_list character)
+* print_char - this function takes a character and prints it to stdout.
+* @character: The character to be printed.
+* Return: 1 upon successful printing.
+*/
+
+int print_char(va_list character)
 {
-	char c = va_arg(character, int);
-	write(1, &c, 1);
-	return(1);
+char c = va_arg(character, int);
+
+write(1, &c, 1);
+
+return (1);
 }

@@ -16,7 +16,7 @@ int _printf(const char *format, ...)
 	int output_printed = 0;
 
 	va_start(list, format);
-	while (*(format+i) != '\0')
+	while (*(format + i) != '\0')
 	{
 		if (format[i] != '%')
 		{
@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			count = format_handler(format[i+1], list, &i);
+			count = format_handler(format[i + 1], list, &i);
 			if (count == -1)
 			{
 				return (-1);
